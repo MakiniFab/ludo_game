@@ -55,3 +55,6 @@ while running:
     screen.blit(text, (20, 20))
 
     pygame.display.flip()
+
+#quit
+pygame.quit()
