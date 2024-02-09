@@ -36,3 +36,17 @@ while running:
                 dice_value = random.randint(1, 6)
                 player_position[player_colors[current_player]] += dice_value
                 current_player = (current_player + 1) % 4
+
+
+    #draw the board
+    pygame.draw.rect(screen, RED, (50, 50, 500, 500))
+    pygame.draw.rect(screen, WHITE, (100, 100, 400, 400))
+
+    #draw player token
+    for color, position in player_position.items():
+        x = 100 + (position % 4) * 100
+        y = 100 + (position // 4) * 100
+        pygame.draw.circle(screen, color, (x, y), 40)
+
+
+        
