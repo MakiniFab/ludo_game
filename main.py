@@ -16,3 +16,9 @@ WHITE = (0, 255, 255)
 WHITE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 BLACK = (0, 0, 0)
+
+#game variables
+player_position = {RED: 0, GREEN: 0, BLUE: 0, YELLOW: 0}
+player_colors = [RED, GREEN, BLUE, YELLOW]
+dice_value = 1
+
