@@ -49,4 +49,9 @@ while running:
         pygame.draw.circle(screen, color, (x, y), 40)
 
 
-        
+    #draw the dice value
+    font = pygame.font.Font(None, 36)
+    text = font.render(f"Dice: {dice_value}", True,BLACK)
+    screen.blit(text, (20, 20))
+
+    pygame.display.flip()
